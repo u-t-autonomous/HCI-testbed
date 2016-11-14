@@ -1,5 +1,3 @@
-This repository contains ROS packages.
-
 ## Dependencies
 
 * Python 2.7
@@ -8,27 +6,26 @@ This repository contains ROS packages.
 * PyAudio
 * ROS
 
-
 ## Documentation
 
 ### Configuration
 
-dict and lm files are created from a corpus using:
+Dict and lm files are created from a corpus using:
 ```python
 http://www.speech.cs.cmu.edu/tools/lmtool-new.html
 ```
 
-pocketsphinx source directories must be set in recognizer.py:
+Pocketsphinx source directories must be set in recognizer.py:
 ```python
-MODELDIR = "/home/usr/pocketsphinx-5prealpha/model" # for default pocketsphinx models and files
+MODELDIR = "/home/usr/pocketsphinx-5prealpha/model" 
 DATADIR = "/home/usr/pocketsphinx-5prealpha/test/data"
 ```
 
 ### Launching
 
-launch recognizer with:
+Launch recognizer with:
 ```bash
 roslaunch move.launch
 ```
 
-the move.launch file specifies launch variables
+The move.launch file specifies launch variables
